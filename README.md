@@ -1,4 +1,4 @@
-# Full-Stack-using-java
+# Suspicious Email Detection System
 
 ABSTRACT
 
