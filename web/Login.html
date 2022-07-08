@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Login.html</title>
+		<SCRIPT LANGUAGE=javascript>
+
+
+function validateForm(formObj){
+
+if(formObj.uname.value.length==0){
+alert("Please enter User ID!");
+formObj.uname.focus();
+return false;
+}
+
+if(formObj.pw.value.length==0){
+alert("Please enter password!");
+formObj.pwd.focus();
+return false;
+}
+
+
+formObj.actionUpdateData.value="update";
+return true;
+}
+
+</SCRIPT>
+	</head>
+
+	<body>
+	<table style="border-color: rgb(0, 64, 128);" align="center" border="2">
+	<tr>
+	<td>
+		<form method="POST" action="loginAction.jsp"
+			onsubmit="return validateForm(this);">
+			<div style="width:38%" align="center">
+				<table align="center" frame="rhs" width="335" height="203">
+			
+					<tr style="color:white">
+						<td colspan="2" style="font-size: large;background-color: rgb(0, 64, 128);width: 35%">
+							
+							<center>
+								
+									Login Form
+								
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td align='right'>
+							<font face="Georgia" size="2px">E-Mail :</font>
+						</td>
+						<td align="left">
+							<input type="text" name="uname">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<font face="Georgia" size="2px"> Password: </font>
+						</td>
+						<td align="left">
+							<input type="password" name="pwd">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<font face="Georgia" size="2px"> User type:</font>
+						</td>
+						<td align="left">
+							<select name="utype">
+								<option value="admin" selected="selected">
+									Admin
+								</option>
+								
+								<option value="user">
+									User
+								</option>
+								
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"  colspan="2" style="background-color: rgb(0, 64, 128);">
+							<input type="submit" value="Login" style="font-family: Georgia;font-size: 17">		<input type="reset" value="Reset" style="font-family: Georgia;font-size: 17">
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+		</form>
+		</td>
+		</tr>
+		</table>
+		<div style="bottom: 100px "><a href=welcomebody.html>Back to Home</a></div>
+	</body>
+</html>

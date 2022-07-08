@@ -1,0 +1,237 @@
+
+<html>
+	<head>
+
+		<title></title>
+
+		<SCRIPT LANGUAGE=javascript>
+
+function checkEmail(email) {
+if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+return (true)
+}
+alert("Invalid E-mail Address! Please re-enter.")
+return (false);
+}
+
+
+function validateForm(formObj){
+
+if(formObj.fname.value.length==0){
+alert("Please enter First Name!");
+formObj.fname.focus();
+return false;
+}
+
+if(formObj.age.value.length==0){
+alert("Please enter age!");
+formObj.age.focus();
+return false;
+}
+
+if(isNaN(formObj.age.value)){
+alert("Please enter age in Numbers!");
+formObj.age.focus();
+return false;
+}
+
+if(formObj.userid.value.length==0){
+alert("Please enter User ID!");
+formObj.userid.focus();
+return false;
+}
+
+if(formObj.password.value.length==0){
+alert("Please enter password!");
+formObj.password.focus();
+return false;
+}
+
+if(formObj.email.value.length==0){
+alert("Please enter Email!");
+formObj.email.focus();
+return false;
+}
+
+if(!checkEmail(formObj.email.value)){
+   formObj.email.focus();
+   return false;
+}
+
+if(formObj.address.value.length==0){
+alert("Please enter address!");
+formObj.address.focus();
+Anonymous Query Processing in Road Networksreturn false;
+}
+
+if(formObj.phno.value.length==0){
+alert("Please enter Phone No.!");
+formObj.phno.focus();
+return false;
+}
+
+if(isNaN(formObj.phno.value)){
+alert("Please enter correct Phone No!");
+formObj.phno.focus();
+return false;
+}
+
+
+formObj.actionUpdateData.value="update";
+return true;
+}
+//-->
+</SCRIPT>
+	</head>
+	<body text="white">
+		
+
+			<table border=2 style="background-color: rgb( 0, 64, 128 );" align="center" >
+					<tr>
+						<td>
+			<form action="regAction.jsp" method="post" onsubmit="return validateForm(this);">
+
+						<table width="272" height="419">
+
+								<tr>
+									<td colspan="2" align="center"
+										style="background-color: rgb(0, 64, 128);">
+										<font size="4" color="white"><b>Please Enter the Following
+											Details</b></font>
+										<br>
+									</td>
+								</tr>
+
+								<tr >
+									<td colspan="2" align="center" style="background-color: rgb(0, 64, 128 );">
+										 &nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td align="right" >
+										<b>First Name
+										</b>
+									</td>
+									<td align="left" >
+										<input type="text" name="fname" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right" >
+										<b>Last Name
+										</b>
+									</td>
+									<td align="left" >
+										<input type="text" name="lname" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right" >
+										<b>Gender
+										</b>
+									</td>
+									<td align="left" >
+										<input type="Radio" name="gender" value="Male"  checked="checked"/>Male<br/>
+										<input type="Radio" name="gender" value="Female"  />Female<br/>
+									</td>
+								</tr>
+								<tr>
+									<td align="right" >
+										<b>Age
+										</b>
+									</td>
+									<td align="left" >
+										<input type="text" name="age" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right" >
+										<b>User Id<font color="#FF0000">*</font>
+										</b>
+									</td>
+									<td align="left" >
+										<input type="text" name="userid" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<b>Password<font color="#FF0000">*</font>
+										</b>
+									</td>
+									<td align="left">
+										<input type="password" name="password" size="30"
+											maxlength="120" />
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<b>Email</b>
+									</td>
+									<td align="left">
+										<input type="text" name="email" size="30" maxlength="120" />
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<b>Address</b>
+									</td>
+									<td align="left">
+										<input type="text" name="address" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<b>City</b>
+									</td>
+									<td align="left">
+										<input type="text" name="city" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<b>State</b>
+									</td>
+									<td align="left">
+										<input type="text" name="state" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<b>Zip</b>
+									</td>
+									<td align="left">
+										<input type="text" name="zip" size="30" maxlength="120" />
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<b>Phone No.</b>
+									</td>
+									<td align="left">
+										<input type="text" name="phno" size="30" maxlength="120" />
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="2">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="2"
+										style="background-color: rgb(0, 64, 128);">
+										<input type="submit" value="Submit">
+
+									</td>
+								</tr>
+							</table>
+					</form>
+			</td>
+					</tr>
+				</table>
+	</body>
+</html>
+
+

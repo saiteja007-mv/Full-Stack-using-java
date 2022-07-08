@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script type="text/javascript">
+function fun1(TR,T){
+document.getElementById(T).style.color="white";
+document.getElementById(TR).style.backgroundColor="#151B8D";
+}
+function fun2(TR,T){
+document.getElementById(T).style.color="#151B8D";
+document.getElementById(TR).style.backgroundColor="white";
+}
+window.history.foward();
+</script>
+	</head>
+	<body>
+		<font size="4" face="Georgia">
+			<table align="left" border="3" bordercolor="#151B8D" cellspacing="10">
+				<tr style="color:'#151B8D'" onmouseover="fun1('r1','t1')"
+					onmouseout="fun2('r1','t1')" id="r1">
+					<td>
+						<a href="updateProfile.jsp" target="three" id='t1'
+							style="color: #151B8D">Update Your Profile</a>
+						<br />
+					</td>
+				</tr>
+				
+				
+				
+				<tr style="color:'#151B8D'" onmouseover="fun1('r3','t3')"
+					onmouseout="fun2('r3','t3')" id="r3">
+					<td>
+						<a href="compose.jsp" target="three" id='t3'
+							style="color: #151B8D">Compose</a>
+						<br />
+					</td>
+				</tr>
+				<tr style="color:'#151B8D'" onmouseover="fun1('r4','t4')"
+					onmouseout="fun2('r4','t4')" id="r4">
+					<td>
+						<a href="inbox.jsp" target="three" id="t4" style="color: #151B8D">In
+							box</a>
+						<br />
+					</td>
+				</tr>
+                                
+                                <tr style="color:'#151B8D'" onmouseover="fun1('r6','t6')"
+					onmouseout="fun2('r4','t4')" id="r4">
+					<td>
+						<a href="outbox.jsp" target="three" id="t4" style="color: #151B8D">Out
+							box</a>
+						<br />
+					</td>
+				</tr>
+				<tr style="color:'#151B8D'" onmouseover="fun1('r5','t5')"
+					onmouseout="fun2('r5','t5')" id="r5">
+					<td>
+						<a href="logout.jsp" target="_parent" id='t5'
+							style="color: #151B8D">Logout</a>
+						<br />
+					</td>
+				</tr>
+			</table> </font>
+	</body>
+</html>

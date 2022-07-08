@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript">
+function fun1(TR,T){
+document.getElementById(T).style.color="white";
+document.getElementById(TR).style.backgroundColor="#151B8D";
+document.getElementById(T).style.fontStyle="Italic";
+}
+function fun2(TR,T){
+document.getElementById(T).style.color="#151B8D";
+document.getElementById(TR).style.backgroundColor="white";
+document.getElementById(T).style.fontStyle="normal";
+}
+    </script>
+  
+  </head>
+  
+  <body>
+  <table align="left" border="3" bordercolor="#151B8D" cellspacing="10" >
+  <tr style="color:'#151B8D'"   onmouseover="fun1('r1','t1')"   onmouseout="fun2('r1','t1')" id="r1"><td>
+    <font face="Georgia" size="4">
+    <a href="Home.html" target="three" id="t1"  style="color: #151B8D">Home</a>
+    </font></td>
+    </tr>
+    
+   
+   
+    <tr style="color:'#151B8D'"  onmouseover="fun1('r4','t4')"   onmouseout="fun2('r4','t4')" id="r4"><td>
+    <font face="Georgia" size="4">
+    <a href="Login.html"  id="t4" style="color: #151B8D" target="_parent">Login</a>
+    </font></td>
+    </tr>
+    
+     <tr style="color:'#151B8D'" onmouseover="fun1('r3','t3')"   onmouseout="fun2('r3','t3')" id="r3"><td>
+    <font face="Georgia" size="4">
+    <a href="Reg.html" target="three"  id="t3" style="color: #151B8D">Registration</a>
+    </font></td>
+    </tr>
+    
+     
+    </table>
+  </body>
+</html>
